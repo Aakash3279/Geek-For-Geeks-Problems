@@ -1,0 +1,20 @@
+class Solution{
+    static void printTillN(int N){
+        if(N==1){
+            System.out.print(N);
+            return;
+        }
+        printTillN(N-1);
+        System.out.print(" "+N);
+        
+    }
+}
+/*
+Given an integer n, print numbers from 1 to n without using loops. Implement the function printTillN(int n) to print the numbers from 1 to n as space-separated integers, followed by a newline character.
+
+Examples
+
+Input: N = 5
+Output: 1 2 3 4 5
+Explanation: We have to print numbers from 1 to 5.
+*/
